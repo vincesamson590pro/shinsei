@@ -12,6 +12,8 @@ python -m http.server 8000
 
 Then open `http://localhost:8000`. It can also be published to GitHub Pages.
 
+Once published, open SHINSEI on desktop or mobile at https://vincesamson590pro.github.io/shinsei/.
+
 ## Included
 
 - Responsive dashboard, desktop sidebar, and mobile navigation
