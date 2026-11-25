@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="SHINSEI — a focused, local-first entrance exam study platform.">
+  <title>SHINSEI — Study with purpose</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Main navigation">
+      <a class="brand" href="#dashboard" aria-label="SHINSEI home"><span class="brand-mark">心</span><span>SHINSEI<small>STUDY WITH PURPOSE</small></span></a>
+      <div class="nav-label">STUDY</div>
+      <nav class="primary-nav">
+        <a href="#dashboard" data-route="dashboard"><span>◫</span>Dashboard</a>
+        <a href="#subjects" data-route="subjects"><span>▤</span>Subjects</a>
+        <a href="#practice" data-route="practice"><span>◉</span>Practice</a>
+        <a href="#exams" data-route="exams"><span>▣</span>Exams</a>
+        <a href="#mistakes" data-route="mistakes"><span>↻</span>Mistakes <i data-count="mistakes"></i></a>
+        <a href="#saved" data-route="saved"><span>☆</span>Review later <i data-count="saved"></i></a>
+        <a href="#progress" data-route="progress"><span>⌁</span>Progress</a>
+      </nav>
+      <div class="nav-label admin-label">YOUR LIBRARY</div>
+      <nav class="primary-nav"><a href="#manager" data-route="manager"><span>＋</span>Question manager</a><a href="#settings" data-route="settings"><span>⚙</span>Settings</a></nav>
+      <div class="sidebar-bottom"><div class="local-badge"><span></span><div>Private study space<small>Saved on this device</small></div></div><div class="sidebar-foot">一期一会 · One moment at a time</div></div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><div class="mobile-brand"><span class="brand-mark">心</span> SHINSEI</div><div class="crumb"><span>MONDAY, NOVEMBER 24</span><b id="pageTitle">Your dashboard</b></div><div class="top-actions"><button class="icon-button" id="themeToggle" aria-label="Toggle color theme" title="Toggle theme">☼</button><button class="profile-chip" id="profileButton"><span class="avatar">S</span><span>My study space</span><span class="chevron">⌄</span></button></div></header>
+      <div id="view" class="view" tabindex="-1"></div>
+    </main>
+  </div>
+  <nav class="mobile-nav" aria-label="Mobile navigation"><a href="#dashboard" data-route="dashboard"><span>◫</span>Home</a><a href="#subjects" data-route="subjects"><span>▤</span>Subjects</a><a href="#practice" data-route="practice"><span>◉</span>Practice</a><a href="#exams" data-route="exams"><span>▣</span>Exams</a><a href="#progress" data-route="progress"><span>⌁</span>Progress</a></nav>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
+
